@@ -1,0 +1,160 @@
+/* =========================================== Font Family =========================================== */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* =========================================== Global Reset =========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(185, 75%, 39%);
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: royalblue;
+  font-size: 14px;
+}
+
+/* =========================================== App Styling =========================================== */
+.card_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card_container .card_image1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url("./images//bg-pattern-top.svg");
+  background-size: cover;
+  background-position: 100% 100%;
+  z-index: -1;
+}
+
+.card_container .card_image2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  background-image: url("./images//bg-pattern-bottom.svg");
+  background-size: cover;
+  z-index: -1;
+}
+
+.card_container .card {
+  width: 350px;
+  height: 400px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_container .card_header {
+  width: 100%;
+  height: 40%;
+  margin-bottom: auto;
+  background-image: url("./images/bg-pattern-card.svg");
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card_container .card_header .card_img {
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.card_container .card_header .card_img img {
+  width: 73px;
+  height: 73px;
+  border-radius: 10px;
+  border-radius: 50%;
+}
+
+.card_container .card .card_content {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 15%;
+  margin-bottom: auto;
+}
+
+.card_container .card .card_content h1 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: hsl(218, 44%, 22%);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card_container .card .card_content h1 span {
+  font-size: 16px;
+  margin-left: 5px;
+  color: hsl(0, 0%, 59%);
+  position: relative;
+  top: -0.7px;
+}
+
+.card_container .card .card_content p {
+  font-size: 15px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+  font-weight: bold;
+}
+
+.card_container .card .card_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+  padding: 30px 10px 20px;
+}
+
+.card_container .card .card_footer .card_footer_item {
+  text-align: center;
+}
+
+.card_container .card .card_footer .card_footer_item h2 {
+  font-size: 20px;
+  color: hsl(218, 44%, 22%);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.card_container .card .card_footer .card_footer_item p {
+  font-size: 13px;
+  color: hsl(0, 0%, 59%);
+  font-weight: 500;
+}
+
+/* =========================================== End Project =========================================== */
